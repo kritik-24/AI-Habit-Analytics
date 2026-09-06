@@ -2,6 +2,11 @@
 
 A full-stack MERN application that helps users build better habits by tracking daily and weekly activities, analyzing performance, monitoring streaks, and generating personalized AI-powered insights and improvement plans.
 
+## 🔗 Project Links
+
+- **GitHub Repository:** [AI Habit Analytics](https://github.com/kritik-24/AI-Habit-Analytics)
+- **Live Demo:** [View Live Project](https://ai-habit-analytics-1.onrender.com)
+
 ## 🚀 Features
 
 ### 🔐 Authentication
@@ -144,9 +149,9 @@ Create a `.env` file and add the required environment variables:
 
 ```env
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-OPENAI_API_KEY=your_openai_api_key
+MONGO_URI=_mongodb_connection_string
+JWT_SECRET=_jwt_secret
+OPENAI_API_KEY=_openai_api_key
 ```
 
 > Never commit your `.env` file or API keys to GitHub.
