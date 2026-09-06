@@ -1,0 +1,319 @@
+/* ================================
+   HABIT DETAILS PAGE
+================================ */
+
+.habit-details-container {
+  min-height: 100vh;
+  padding: 32px;
+  background: #f4f7fb;
+  color: #172033;
+}
+
+/* ================================
+   HEADER
+================================ */
+
+.habit-details-header {
+  background: white;
+  border-radius: 20px;
+  padding: 28px 32px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 25px rgba(31, 41, 55, 0.06);
+}
+
+.back-btn {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0;
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+.habit-details-header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.habit-details-header p {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 16px;
+}
+
+/* ================================
+   BASIC INFO
+================================ */
+
+.habit-info {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.habit-info > div {
+  background: white;
+  border-radius: 16px;
+  padding: 16px 22px;
+  min-width: 150px;
+  box-shadow: 0 6px 20px rgba(31, 41, 55, 0.05);
+}
+
+.habit-info span {
+  display: block;
+  color: #64748b;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.habit-info strong {
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+/* ================================
+   ANALYTICS CARDS
+================================ */
+
+.habit-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.habit-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 8px 25px rgba(31, 41, 55, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.habit-stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(31, 41, 55, 0.1);
+}
+
+.habit-stat-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef4ff;
+  font-size: 25px;
+  flex-shrink: 0;
+}
+
+.habit-stat-card p {
+  margin: 0 0 5px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.habit-stat-card h2 {
+  margin: 0;
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.habit-stat-card span:not(.habit-stat-icon) {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+/* ================================
+   GENERAL CARDS
+================================ */
+
+.habit-details-card {
+  background: white;
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 25px rgba(31, 41, 55, 0.06);
+}
+
+.habit-details-card h2 {
+  margin: 0 0 24px;
+  font-size: 21px;
+  font-weight: 800;
+}
+
+/* ================================
+   PERFORMANCE SUMMARY
+================================ */
+
+.performance-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.performance-summary > div {
+  background: #f8fafc;
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.performance-summary span {
+  display: block;
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.performance-summary strong {
+  font-size: 23px;
+}
+
+/* ================================
+   PROGRESS BAR
+================================ */
+
+.completion-progress {
+  margin-top: 10px;
+}
+
+.completion-progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.completion-progress-header span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.completion-progress-header strong {
+  color: #2563eb;
+  font-size: 16px;
+}
+
+.completion-progress-track {
+  width: 100%;
+  height: 12px;
+  border-radius: 20px;
+  background: #e2e8f0;
+  overflow: hidden;
+}
+
+.completion-progress-fill {
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    #2563eb,
+    #7c3aed
+  );
+  transition: width 0.5s ease;
+}
+
+/* ================================
+   COMPLETION HISTORY
+================================ */
+
+.completed-dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.completed-date {
+  background: #ecfdf5;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.empty-text {
+  color: #64748b;
+  margin: 0;
+}
+
+/* ================================
+   LOADING
+================================ */
+
+.habit-details-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f7fb;
+  color: #475569;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ================================
+   ERROR
+================================ */
+
+.habit-details-error {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 16px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+  .habit-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .habit-details-container {
+    padding: 18px;
+  }
+
+  .habit-details-header {
+    padding: 22px;
+  }
+
+  .habit-details-header h1 {
+    font-size: 26px;
+  }
+
+  .habit-info {
+    flex-direction: column;
+  }
+
+  .habit-info > div {
+    width: auto;
+  }
+
+  .habit-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .performance-summary {
+    grid-template-columns: 1fr;
+  }
+}
