@@ -7,6 +7,38 @@ A full-stack MERN application that helps users build better habits by tracking d
 - **GitHub Repository:** [AI Habit Analytics](https://github.com/kritik-24/AI-Habit-Analytics)
 - **Live Demo:** [View Live Project](https://ai-habit-analytics-1.onrender.com)
 
+
+## 📸 Screenshots
+
+### 🏠 Dashboard
+
+![Dashboard](screenshots/d1.png)
+![Dashboard](screenshots/d2.png)
+
+
+### 📝 Habit Management
+
+![Habits](screenshots/myhabits.png)
+![Habits](screenshots/habits.png)
+
+### 📊 Analytics
+
+![Analytics](screenshots/analytics.png)
+
+### 🤖 AI-Powered Insights
+
+![AI Insights](screenshots/ai-insights.png)
+![AI Insights](screenshots/ai-insights1.png)
+
+### 🔐 Authentication
+
+![Login](screenshots/login.png)
+
+
+### 🔐 REGISTER
+
+![Login](screenshots/register.png)
+
 ## 🚀 Features
 
 ### 🔐 Authentication
