@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/auth";
+const API_URL = "https://ai-habit-analytics.onrender.com/api/auth";
 
 // REGISTER USER
 export const registerUser = async (userData) => {

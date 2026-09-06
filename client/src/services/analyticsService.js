@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/analytics";
-const AI_API_URL = "http://localhost:5000/api/ai";
+const API_URL = "https://ai-habit-analytics.onrender.com/api/analytics";
+const AI_API_URL = "https://ai-habit-analytics.onrender.com/api/ai";
 
 const getAuthHeaders = () => {
   const token = localStorage.getItem("token");
